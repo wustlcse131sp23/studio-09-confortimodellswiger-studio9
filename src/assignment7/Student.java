@@ -2,23 +2,41 @@ package assignment7;
 
 //TODO: Copy a working Student class from Assignment 7 over this file.
 public class Student {
-	public Student(String firstName, String lastName, int id) {
-		throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
+	private String firstName;
+	private String lastName;
+	private int iD;
+	private double bearBucks;
+	/*
+	private int atCredit;
+	private int passCredit;
+	private double qPoints;
+	private double bearBucks;
+	 */
+	public Student(String firstName, String lastName, int iD) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.iD = iD;
+		//throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
 	}
 
 	public String getFullName() {
-		throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
+		String fullName = firstName+" "+lastName;
+		return fullName; 
+		//throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
 	}
 
 	public int getId() {
-		throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
+		return iD; 
+		//throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
 	}
 
 	public void depositBearBucks(double amount) {
-		throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
+		bearBucks=bearBucks+amount;
+		//throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
 	}
 
 	public double getBearBucksBalance() {
-		throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
+		return bearBucks;
+		//throw new RuntimeException("TODO: Copy a working Student class from Assignment 7 over this file.");
 	}
 }
